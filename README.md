@@ -24,13 +24,50 @@ An interactive **Streamlit dashboard** is provided for clustering, visualization
 
 ---
 
-## ⚙️ Features  
-- 📊 **Cluster songs** using K-Means on audio features  
-- 🎨 **2D PCA visualization** of clusters  
-- 📌 **Cluster profiles** with average feature values  
-- 📈 **Interactive controls** to select number of clusters (k)  
-- ⬇️ **Export clustered dataset** as CSV  
+## ⭐ Key Features
+### 🔍 1. Complete ML Pipeline
 
+The script performs:
+
+Basic EDA (info, missing values, feature distributions)
+
+Preprocessing
+
+Scaling using StandardScaler or MinMaxScaler
+
+PCA (2D visualization)
+
+KMeans clustering
+
+DBSCAN clustering
+
+Hierarchical clustering (Ward linkage)
+
+Inertia curve (Elbow Method)
+
+Silhouette Score & Davies–Bouldin Index
+
+Cluster summary statistics export
+
+Visualizations saved automatically
+
+### 📊 2. Interactive Streamlit Dashboard
+
+The dashboard allows users to:
+
+Choose number of clusters (k)
+
+Run KMeans instantly
+
+Visualize cluster distribution
+
+View PCA scatter plot
+
+Inspect cluster-wise feature averages
+
+Explore correlation heatmaps
+
+Read cluster-wise music interpretation summaries
 ---
 
 ## 🛠️ Installation  
@@ -41,12 +78,6 @@ An interactive **Streamlit dashboard** is provided for clustering, visualization
    cd project-folder
    ```
 
-2. **Create virtual environment (optional)**  
-   ```bash
-   python -m venv venv
-   source venv/bin/activate   # Mac/Linux
-   venv\Scripts\activate      # Windows
-   ```
 
 3. **Install dependencies**  
    ```bash
@@ -79,6 +110,23 @@ After running, open 👉 `http://localhost:8501` in your browser.
 | `duration_ms`   | Song duration in ms |
 
 ---
+## 📈 Evaluation Metrics
+### For KMeans:
+
+Sum of Squared Errors (SSE/Inertia)
+
+Silhouette Score
+
+Davies–Bouldin Index
+
+### For DBSCAN:
+
+Silhouette Score (if clusters > 1)
+
+Number of clusters
+
+Noise points detected
+
 
 ## 📎 Requirements  
 See `require.txt`:  
