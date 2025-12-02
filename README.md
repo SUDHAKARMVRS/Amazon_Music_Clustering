@@ -37,7 +37,7 @@ An interactive **Streamlit dashboard** is provided for clustering, visualization
 
 1. **Clone repository / download project files**  
    ```bash
-   git clone <your-repo-link>
+   git clone [<(https://github.com/SUDHAKARMVRS/Amazon_Music_Clustering.git)>]
    cd project-folder
    ```
 
