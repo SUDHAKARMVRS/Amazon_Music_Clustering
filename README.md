@@ -68,6 +68,7 @@ Inspect cluster-wise feature averages
 Explore correlation heatmaps
 
 Read cluster-wise music interpretation summaries
+
 ---
 
 ## 🛠️ Installation  
