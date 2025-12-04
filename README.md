@@ -7,140 +7,95 @@
 ![scikit-learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikit-learn)  
 
 ---
+============================================================
+🎵 AMAZON MUSIC CLUSTERING PROJECT
+============================================================
 
-## 📌 Project Overview  
-This project analyzes an **Amazon Music dataset (single genre artists)** and applies **K-Means clustering** to group songs based on audio features.  
-An interactive **Streamlit dashboard** is provided for clustering, visualization, and downloading results.  
+A complete end‑to‑end unsupervised machine learning project
+featuring clustering, PCA visualizations, evaluation metrics,
+and a modern interactive Streamlit dashboard.
 
----
+------------------------------------------------------------
+📂 Project Structure
+------------------------------------------------------------
+Amazon-Music-Clustering/
+│
+├── main_pipeline.py        → Full ML pipeline
+├── dashboard.py            → Streamlit UI
+├── dataset.csv             → Music features dataset
+├── outputs/                → Auto‑generated results
+│     ├── elbow.png
+│     ├── silhouette.png
+│     ├── pca_plot.png
+│     ├── clusters.csv
+│     └── dendrogram.png
+└── README.txt
 
-## 📂 Project Structure  
-```
-├── Preprocess.ipynb         # Jupyter notebook for preprocessing steps
-├── single_genre_artists.csv # Dataset used for clustering
-├── stream.py                # Streamlit app (dashboard)
-├── require.txt              # Required Python libraries
-```
+------------------------------------------------------------
+⭐ Key ML Features
+------------------------------------------------------------
+• Data Cleaning & Preprocessing  
+• Feature Standardization  
+• PCA Dimensionality Reduction  
+• KMeans Clustering  
+• DBSCAN Clustering  
+• Agglomerative (Hierarchical) Clustering  
+• Silhouette & Davies‑Bouldin Evaluation  
+• Auto‑Saved Visualizations  
 
----
+------------------------------------------------------------
+📊 Streamlit Dashboard Features
+------------------------------------------------------------
+• Select number of clusters  
+• Run KMeans interactively  
+• PCA cluster visualization  
+• Feature‑wise distribution plots  
+• Cluster summary insights  
+• Heatmaps & correlations  
 
-## ⭐ Key Features
-### 🔍 1. Complete ML Pipeline
+------------------------------------------------------------
+▶️ How to Run
+------------------------------------------------------------
+1. Install dependencies:
+   pip install -r requirements.txt
 
-The script performs:
+2. Run ML pipeline:
+   python main_pipeline.py
 
-Basic EDA (info, missing values, feature distributions)
+3. Launch dashboard:
+   streamlit run dashboard.py
 
-Preprocessing
+------------------------------------------------------------
+📁 Outputs Generated
+------------------------------------------------------------
+• elbow.png              → Optimal K visualization  
+• silhouette.png         → Silhouette score curve  
+• pca_plot.png           → PCA scatter  
+• clustered_data.csv     → Cluster labels  
+• dendrogram.png         → Hierarchical tree  
 
-Scaling using StandardScaler or MinMaxScaler
+------------------------------------------------------------
+🧠 Cluster Interpretation Example
+------------------------------------------------------------
+• Cluster 0 → High energy, high danceability  
+• Cluster 1 → Acoustic, calm, soft tracks  
+• Cluster 2 → Speech‑heavy, rap/spoken  
+• Cluster 3 → Instrumental & low‑vocal tracks  
 
-PCA (2D visualization)
+------------------------------------------------------------
+ 🛠️ Used Tools
+------------------------------------------------------------
+🐍 Python | 🚀 Streamlit | 🤖 Scikit-learn | 📊 Pandas & Matplotlib  
 
-KMeans clustering
-
-DBSCAN clustering
-
-Hierarchical clustering (Ward linkage)
-
-Inertia curve (Elbow Method)
-
-Silhouette Score & Davies–Bouldin Index
-
-Cluster summary statistics export
-
-Visualizations saved automatically
-
-### 📊 2. Interactive Streamlit Dashboard
-
-The dashboard allows users to:
-
-Choose number of clusters (k)
-
-Run KMeans instantly
-
-Visualize cluster distribution
-
-View PCA scatter plot
-
-Inspect cluster-wise feature averages
-
-Explore correlation heatmaps
-
-Read cluster-wise music interpretation summaries
-
----
-
-## 🛠️ Installation  
-
-1. **Clone repository / download project files**  
-   ```bash
-   git clone [<(https://github.com/SUDHAKARMVRS/Amazon_Music_Clustering.git)>]
-   cd project-folder
-   ```
-
-
-3. **Install dependencies**  
-   ```bash
-   pip install -r require.txt
-   ```
-
----
-
-## ▶️ Run the Dashboard  
-```bash
-streamlit run stream.py
-```
-
-After running, open 👉 `http://localhost:8501` in your browser.  
-
----
-
-## 📊 Dataset Columns  
-| Column          | Description |
-|-----------------|-------------|
-| `danceability`  | Suitability for dancing (0–1) |
-| `energy`        | Intensity and activity (0–1) |
-| `loudness`      | Loudness in dB |
-| `speechiness`   | Spoken word presence (0–1) |
-| `acousticness`  | Acoustic probability (0–1) |
-| `instrumentalness` | Instrumental probability (0–1) |
-| `liveness`      | Live performance probability (0–1) |
-| `valence`       | Positivity of mood (0–1) |
-| `tempo`         | Beats per minute |
-| `duration_ms`   | Song duration in ms |
-
----
-## 📈 Evaluation Metrics
-### For KMeans:
-
-Sum of Squared Errors (SSE/Inertia)
-
-Silhouette Score
-
-Davies–Bouldin Index
-
-### For DBSCAN:
-
-Silhouette Score (if clusters > 1)
-
-Number of clusters
-
-Noise points detected
-
-
-## 📎 Requirements  
-See `require.txt`:  
-```
-pandas
-streamlit
-matplotlib
-seaborn
-numpy
-```
----
-## 🧑‍💻 Author  
+------------------------------------------------------------
+🧑‍💻 Author  
+------------------------------------------------------------
 ### Sudhakar M
 📧sudhakar.mvrs@gmail.com| 🌐 (https://www.linkedin.com/in/sudhakar-m-657ba787/)
-## 🛠️ Used Tools
-🐍 Python | 🚀 Streamlit | 🤖 Scikit-learn | 📊 Pandas & Matplotlib  
+
+
+============================================================
+END OF README
+============================================================
+
+
