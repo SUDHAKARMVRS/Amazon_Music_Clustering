@@ -30,8 +30,8 @@ It includes:
 ```
 Amazon-Music-Clustering/
 │
-├── main_pipeline.py      # Full ML pipeline script
-├── dashboard.py          # Streamlit dashboard app
+├── complete.py      # Full ML pipeline script
+├── stream.py          # Streamlit dashboard app
 ├── dataset.csv           # Input dataset
 ├── outputs/              # Auto-generated results
 │     ├── elbow.png
@@ -55,7 +55,6 @@ Amazon-Music-Clustering/
 - Evaluation using Silhouette & DB Score  
 
 ### 📊 Streamlit Dashboard  
-- Upload dataset  
 - Choose number of clusters  
 - Interactive PCA visualization  
 - Cluster insights  
