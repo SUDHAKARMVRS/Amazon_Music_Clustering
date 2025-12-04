@@ -1,10 +1,12 @@
 # 🎵 Amazon Music Clustering Project  
+
 ### *Unsupervised Machine Learning + Streamlit Dashboard*
 
 ---
 
-## ✨ Overview  
-This project performs **end-to-end clustering** on Amazon Music track data using modern unsupervised ML techniques.  
+## ✨ Overview   
+This project performs **end-to-end clustering** unsupervised machine learning project featuring clustering, PCA visualizations, evaluation metrics,and a modern interactive Streamlit dashboard.
+
 It includes:
 
 - Data Cleaning  
@@ -65,12 +67,12 @@ pip install -r requirements.txt
 
 ### **Run the ML Pipeline**  
 ```
-python main_pipeline.py
+python complete.py
 ```
 
 ### **Launch the Dashboard**  
 ```
-streamlit run dashboard.py
+streamlit run stream.py
 ```
 
 ---
@@ -95,17 +97,16 @@ streamlit run dashboard.py
 
 ---
 
-## 👨‍💻 Author  
-Generated for **Sudhakar M**  
-by **ChatGPT (ML + Streamlit Edition)**  
+## 🛠️ Used Tools
+
+🐍 Python | 🚀 Streamlit | 🤖 Scikit-learn | 📊 Pandas & Matplotlib  
 
 ---
 
-## ⭐ Like this project?  
-I can also create:  
-✔ Project Report PDF  
-✔ Presentation (PPT)  
-✔ GitHub-ready packaging  
-✔ Architecture Diagrams  
+## 👨‍💻 Author  
+### Sudhakar M
+📧sudhakar.mvrs@gmail.com| 🌐 (https://www.linkedin.com/in/sudhakar-m-657ba787/)
 
-Just ask! 😊
+
+---
+
