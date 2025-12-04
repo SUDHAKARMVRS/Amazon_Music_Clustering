@@ -2,6 +2,11 @@
 
 ### *Unsupervised Machine Learning + Streamlit Dashboard*
 
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)  
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)  
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)  
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-yellow?logo=plotly)  
+![scikit-learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikit-learn)  
 ---
 
 ## ✨ Overview   
