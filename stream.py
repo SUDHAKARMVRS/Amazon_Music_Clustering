@@ -208,6 +208,53 @@ X = df[features]
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
+# ---------------------------------------
+# PREPROCESS (EXACT SAME AS NOTEBOOK)
+# ---------------------------------------
+FEATURES = [
+ "danceability", "energy", "loudness", "speechiness","acousticness",
+ "instrumentalness", "liveness","valence", "tempo", "duration_ms"
+]
+
+# Keep only features
+X = df[FEATURES].copy()
+
+# Fill missing with median (same as notebook)
+for col in X.columns:
+    X[col].fillna(X[col].median(), inplace=True)
+
+# Log transform only for duration
+if "duration_ms" in X.columns:
+    X["duration_ms"] = np.log1p(X["duration_ms"])
+
+# StandardScaler (same as notebook)
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+# PCA (same as notebook)
+pca = PCA(n_components=2)
+X_pca = pca.fit_transform(X_scaled)
+
+# Assign for plotting
+df["pca1"], df["pca2"] = X_pca[:, 0], X_pca[:, 1]
+
+explained = pca.explained_variance_ratio_
+
+# -------------------------------------------------------
+# GLOBAL PCA (Do it once and use everywhere)
+# -------------------------------------------------------
+pca = PCA(n_components=2)
+X_pca = pca.fit_transform(X_scaled)
+
+df["pca1"], df["pca2"] = X_pca[:, 0], X_pca[:, 1]
+
+explained = pca.explained_variance_ratio_
+
+pc1 = explained[0]
+pc2 = explained[1]
+total = pc1 + pc2
+
+
 # -------------------------------------------------------
 # TABS
 # -------------------------------------------------------
@@ -267,9 +314,7 @@ with tab2:
 
 
 # PCA Explained Variance Table
-explained = pca.explained_variance_ratio_
-pc1, pc2 = explained[0], explained[1]
-total = pc1 + pc2
+
 
 st.markdown("### 📊 PCA Explained Variance Summary")
 
@@ -289,13 +334,6 @@ pca_table = pd.DataFrame({
 
 st.dataframe(pca_table)
 
-# Thanglish Meaning
-st.markdown("""
-### 🇮🇳 Thanglish Explanation
-- **PC1 (27.69%)** → Data la iruka major variations ellām idhu capture pannum  
-- **PC2 (20.90%)** → Mood + danceability differences  
-- **Total = 48.59%** → 2D PCA plot la *almost half info retain panniruku*
-""")
 
 # Interpretation Box
 st.info("""
