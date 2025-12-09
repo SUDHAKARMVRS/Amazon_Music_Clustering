@@ -57,16 +57,15 @@ Amazon-Music-Clustering/
 ### 📊 Streamlit Dashboard  
 - Choose number of clusters  
 - Interactive PCA visualization  
-- Cluster insights  
-- Heatmaps & distributions  
-
+- Heatmaps & distributions
+- Cluster insights
 ---
 
 ## ▶️ How to Run  
 
 ### **Install dependencies**  
 ```
-pip install -r requirements.txt
+pip install -r require.txt
 ```
 
 ### **Run the ML Pipeline**  
@@ -76,7 +75,7 @@ python complete.py
 
 ### **Launch the Dashboard**  
 ```
-streamlit run stream.py
+python -m streamlit run stream.py
 ```
 
 ---
