@@ -105,6 +105,14 @@ python -m streamlit run stream.py
 🐍 Python | 🚀 Streamlit | 🤖 Scikit-learn | 📊 Pandas & Matplotlib  
 
 ---
+## Screeshots
+
+<img width="1920" height="1008" alt="Screenshot 2025-12-04 103609" src="https://github.com/user-attachments/assets/161423f0-2801-4a5d-9fe4-e5f2001bb927" />
+<img width="1920" height="1080" alt="Screenshot 2025-12-02 115946" src="https://github.com/user-attachments/assets/230b5a73-6b2a-4e80-ba91-367d32134527" />
+<img width="1920" height="1008" alt="Screenshot 2025-12-02 125433" src="https://github.com/user-attachments/assets/b5546564-0e47-410c-83d2-43e51cd8d3da" />
+<img width="1920" height="1080" alt="Screenshot 2025-12-02 115933" src="https://github.com/user-attachments/assets/70e53a7d-4340-4033-813e-e0a0d2e93956" />
+<img width="1920" height="1080" alt="Screenshot 2025-12-02 115924" src="https://github.com/user-attachments/assets/623ee729-aa61-4729-b117-3da4e82ab0d0" />
+<img width="1920" height="1080" alt="Screenshot 2025-12-02 115855" src="https://github.com/user-attachments/assets/f96bd1de-70ff-492e-9889-826b06bff957" />
 
 ## 👨‍💻 Author  
 ### Sudhakar M
